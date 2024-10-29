@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Code by Adinda -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Birthday Wishes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        /* CSS tetap sama seperti sebelumnya */
+        .credit {
+            font-size: 0.8em;
+            color: #9575cd;
+            margin-top: 20px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="ornament"></div>
+    <div class="card">
+        <h1>Happy Birthday</h1>
+        <div class="decoration">✦ ♪ ✦</div>
+        <p>On this special day, may your life be filled with the <span class="highlight">elegance of purple hues</span>, the <span class="highlight">warmth of cherished memories</span>, and the <span class="highlight">promise of beautiful tomorrows</span>.</p>
+        <p>Each moment of your coming year shall be as exquisite and precious as you are.</p>
+        
+        <!-- Spotify Track -->
+        <div class="spotify-player">
+            <iframe style="border-radius:12px" 
+                    src="https://open.spotify.com/embed/track/2vThhzagG4by8ybBs3Q08v?utm_source=generator" 
+                    width="100%" 
+                    height="152" 
+                    frameBorder="0" 
+                    allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                    loading="lazy">
+            </iframe>
+        </div>
+
+        <div class="decoration">✦</div>
+        <a href="#" class="button">Celebrate in Style</a>
+        
+        <!-- Credit -->
+        <div class="credit">Code by Adinda for Lexsa</div>
+    </div>
+</body>
+</html>
+ <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #2c003e, #481658);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #e0d1e6;
+        }
+
+        .card {
+            background: rgba(72, 22, 88, 0.8);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            padding: 50px;
+            max-width: 800px; /* Diperlebar untuk mengakomodasi player Spotify */
+            text-align: center;
+            animation: fadeIn 1.5s ease-out;
+            border: 1px solid #8e44ad;
+            margin: 20px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-family: 'Cormorant Garamond', serif;
+            color: #d1c4e9;
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        p {
+            color: #e0d1e6;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            font-weight: 300;
+        }
+
+        .highlight {
+            color: #b39ddb;
+            font-weight: 400;
+        }
+
+        .decoration {
+            font-size: 2.5em;
+            color: #9575cd;
+            margin: 20px 0;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #8e44ad;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9em;
+        }
+
+        .button:hover {
+            background-color: #9b59b6;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .spotify-player {
+            margin: 30px auto;
+            width: 100%;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            border-radius: 12px;
+        }
+
+        .ornament {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .ornament::before,
+        .ornament::after {
+            content: '✦';
+            position: absolute;
+            font-size: 24px;
+            color: rgba(255,255,255,0.3);
+            animation: float 6s infinite ease-in-out;
+        }
+
+        .ornament::before {
+            top: 10%;
+            left: 10%;
+        }
+
+        .ornament::after {
+            bottom: 10%;
+            right: 10%;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .card {
+                padding: 30px;
+                margin: 10px;
+            }
+
+            h1 {
+                font-size: 2.5em;
+            }
+        }
+    </style>
